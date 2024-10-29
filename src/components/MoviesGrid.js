@@ -78,9 +78,13 @@ function MoviesGridTMDB() {
     <div>
       <Finder movies={movies} setFilteredMovies={setFilteredMovies} />
       <div className="movies-grid">
-        {filteredMovies.map((movie) => (
-          <MovieCard movie={movie} key={movie.id}></MovieCard>
-        ))}
+        {filteredMovies.length > 0 ? (
+          filteredMovies.map((movie) => (
+            <MovieCard movie={movie} key={movie.id}></MovieCard>
+          ))
+        ) : (
+          <div className="empty-card"></div>
+        )}
       </div>
     </div>
   );
