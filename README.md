@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Cinema React
+
+This project is a movie application built with React, allowing users to browse and filter movies fetched from [The Movie Database (TMDB) API](https://www.themoviedb.org/documentation/api).
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,15 +12,15 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
+The page will reload if you make edits.\
 You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -24,8 +28,8 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The build is minified, and filenames include hashes.\
+Your app is ready for deployment!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -33,38 +37,73 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Movie Browsing**: View a list of popular movies from TMDB API.
+- **Filtering**: Filter movies by genre, popularity, release date, and more.
+- **User-Friendly UI**: Simple and visually appealing interface.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="https://github.com/lucasgarciadominguez/Assets/blob/main/ReactCinemaNight.PNG" width="800">
+<img src="https://github.com/lucasgarciadominguez/Assets/blob/main/ReactCinemaDay.PNG" width="800">
+<!--
+## Demo
+Check out a live demo of the app here: [Cinema React Demo](link-to-demo)
+-->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Prerequisites
 
-### Code Splitting
+- **Node.js** (version 14 or higher)
+- **npm** or **yarn** (for package management)
+- **TMDB API Key**: Obtain one by creating a [TMDB account](https://www.themoviedb.org/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Installation
 
-### Analyzing the Bundle Size
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+    git clone https://github.com/lucasgarciadominguez/cinema-react.git
+    cd cinema-react
+    ```
 
-### Making a Progressive Web App
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-### Advanced Configuration
+3. Set up the TMDB API key:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    - Create a `.env` file in the root of the project.
+    - Add your API key:
 
-### Deployment
+      ```plaintext
+      REACT_APP_TMDB_API_KEY=your_api_key
+      ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Start the application:
 
-### `npm run build` fails to minify
+    ```bash
+    npm start
+    # or
+    yarn start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Structure
+
+```plaintext
+cinema-react/
+├── public/                # Public files
+├── src/                   # Source code
+│   ├── components/        # Reusable components
+│   ├── pages/             # Application pages
+│   ├── services/          # API setup and calls
+│   ├── App.js             # Main app component
+│   └── index.js           # Entry point
+└── README.md              # Project documentation
+
