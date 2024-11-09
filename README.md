@@ -43,6 +43,7 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 
 - **Movie Browsing**: View a list of popular movies from TMDB API.
 - **Filtering**: Filter movies by genre, popularity, release date, and more.
+- **Day-Night Mode**: Allows changing different views.
 - **User-Friendly UI**: Simple and visually appealing interface.
 
 ## Screenshots
